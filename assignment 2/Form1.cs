@@ -177,6 +177,92 @@ namespace assignment_2
         {
 
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Reads what text is in the force and angle textboxes
+                double Height = double.Parse(textBox6.Text);
+                double Radius = double.Parse(textBox7.Text);
+                //
+                double Volume = Math.PI * (Radius * 2) * Height / 3;
+                double SurfaceArea = 3.1415926359 * Radius * (Radius + Math.Sqrt(Height * 2 + Radius * 2));
+                //
+                label11.Text = "Volume = " + Volume;
+                label12.Text = "Surface Area =" + SurfaceArea;
+            }
+            catch
+            {
+                MessageBox.Show("your numbers are wrong, check again");
+            }
+
+
+
+        }
+
+        private void TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double CylinderRadius = double.Parse(textBox8.Text);
+                double CylinderHeight = double.Parse(textBox9.Text);
+                double CylinderSurfaceArea = 2 * Math.PI * CylinderRadius * CylinderHeight + 2 * Math.PI * (CylinderRadius * CylinderRadius);
+                double CylinderVolume = Math.PI * (CylinderRadius * CylinderRadius) * CylinderHeight;
+                label15.Text = "Surface Area =" + CylinderSurfaceArea;
+                label16.Text = "Volume =" + CylinderVolume;
+
+            }
+            catch
+            {
+                MessageBox.Show(" error Cylinder");
+            }
+        }
     }
 
 }
